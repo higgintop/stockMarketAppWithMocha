@@ -8,3 +8,5 @@ This is an app demonstrating testing front-end JavaScript with Mocha and Chai
 [![npm Dependency Status](https://www.versioneye.com/user/projects/54d8df75c1bbbd9bd70000b4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54d8df75c1bbbd9bd70000b4)
 
 [![bower Dependency Status](https://www.versioneye.com/user/projects/54d8df59c1bbbd5f82000019/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54d8df59c1bbbd5f82000019)
+
+[![Code Climate](https://codeclimate.com/github/higgintop/stockMarketAppWithMocha/badges/gpa.svg)](https://codeclimate.com/github/higgintop/stockMarketAppWithMocha)
