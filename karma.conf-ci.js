@@ -2,6 +2,8 @@
 // Generated on Fri Feb 06 2015 12:01:05 GMT-0600 (CST)
 
 module.exports = function(config) {
+  'use strict';
+
   var sauceLaunchers = {
     SL_IE10: {
       base: 'SauceLabs',
@@ -71,16 +73,15 @@ module.exports = function(config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
 
-
     customLaunchers: sauceLaunchers,
-    
+
     sauceLabs: {
       testName: 'Unit Tests'
     },
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS', 'Firefox', 'SL_IE10'],
+    browsers: ['SL_IE10'],
 
 
     // Continuous Integration mode
