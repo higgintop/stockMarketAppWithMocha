@@ -1,9 +1,9 @@
 {
   "name": "Mocha-Portfolio",
   "version": "0.0.1",
-  "homepage": "https://github.com/sscotth/Mocha-Portfolio",
+  "homepage": "https://github.com/higgintop/stockMarketAppWithMocha",
   "authors": [
-    "Scott <scott@sscotth.io>"
+    "Allison Higginbotham <higgintop@gmail.com>"
   ],
   "description": "This is an app demonstrating testing front-end JavaScript with Mocha and Chai",
   "main": "public/index.html",
