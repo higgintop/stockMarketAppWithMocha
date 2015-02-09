@@ -10,29 +10,36 @@
   <body>
     <div id="mocha">
       <div class="mocha-fixture hidden">
-        <h1>Hello World</h1>
+        <table><thead></thead><tbody></tbody></table>
       </div>
     </div>
 
     <script src="../bower_components/mocha/mocha.js"></script>
     <script src="../bower_components/chai/chai.js"></script>
-
     <script>mocha.setup('bdd');</script>
     <!-- http://mochajs.org/#interfaces -->
     <!-- 'tdd' provides suite(), test(), setup(), & teardown() -->
     <!-- 'bdd' provides describe(), it(), before(), after(), beforeEach(), & afterEach() -->
-
     <script>
-        var assert = chai.assert,
-            expect = chai.expect,
-            should = chai.should();
+      var assert = chai.assert,
+          expect = chai.expect,
+          should = chai.should();
     </script>
 
     <!-- include source files here... -->
-    <!-- <script src="../js/main.js"></script> -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/async/lib/async.js"></script>
+    <script src="../bower_components/lodash/lodash.min.js"></script>
+    <script src="../public/js/main.js"></script>
     <!-- include spec files here... -->
     <script src="spec/main.test.js"></script>
 
-    <script>mocha.run()</script>
+    <script>
+      if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      } else {
+        mocha.run();
+      }
+    </script>
   </body>
 </html>
